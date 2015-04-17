@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectName>TEST Project</ProjectName>
+  <TasksFiles>0.tsk</TasksFiles>
+  <TasksFiles>1.tsk</TasksFiles>
+  <TasksFiles>2.tsk</TasksFiles>
+  <Members id="0">
+    <Name>AkiyoshiKoyama</Name>
+    <MailAddress>test</MailAddress>
+  </Members>
+  <Members id="1">
+    <Name>TashiroRyuuji</Name>
+    <MailAddress>test</MailAddress>
+  </Members>
+</Project>

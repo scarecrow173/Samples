@@ -1,0 +1,32 @@
+﻿<mui:ModernWindow x:Class="AClockworkOrange.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="時計仕掛けのオレンジ" IsTitleVisible="True"
+        ContentSource="/Pages/MainContent/ProjectsPage.xaml">
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Projects">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="home" Source="/Pages/MainContent/ProjectsPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="settings" GroupKey="settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="software" Source="/Pages/SettingsPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="config" GroupKey="config">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="config" Source="/Pages/SettingsPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+    
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="settings" Source="/Pages/SettingsPage.xaml" />
+        <mui:Link DisplayName="config" Source="/Pages/SettingsPage.xaml" />
+        <mui:Link DisplayName="help" Source="http://mui.codeplex.com" />
+    </mui:ModernWindow.TitleLinks>
+    
+</mui:ModernWindow>

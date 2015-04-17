@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Task id="0">
+  <TaskState>ToDo</TaskState>
+  <SubTasks>
+    <IsComplated>false</IsComplated>
+    <Due>0001-01-01T00:00:00</Due>
+  </SubTasks>
+  <Content>0番目のタスク</Content>
+  <Due>2015-04-20T00:00:00</Due>
+  <Assignee>0</Assignee>
+  <Priority>Trivial</Priority>
+</Task>
