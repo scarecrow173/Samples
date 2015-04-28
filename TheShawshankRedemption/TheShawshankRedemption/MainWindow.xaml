@@ -1,0 +1,25 @@
+﻿<mui:ModernWindow x:Class="TheShawshankRedemption.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="TheShawshankRedemption" IsTitleVisible="True"
+        ContentSource="/Pages/BrowserPage.xaml" Closing="ModernWindow_Closing">
+
+    <!--<mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="welcome">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="home" Source="/Pages/Home.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="settings" GroupKey="settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="software" Source="/Pages/SettingsPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>-->
+    
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Home" Source="https://www.google.co.jp/"/>
+        <mui:Link DisplayName="History" Source="/Pages/HistoryPage.xaml"/>
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>
