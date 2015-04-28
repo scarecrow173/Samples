@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mui="http://firstfloorsoftware.com/ModernUI"
         Title="TheShawshankRedemption" IsTitleVisible="True"
-        ContentSource="/Pages/BrowserPage.xaml" Closing="ModernWindow_Closing">
+        ContentSource="/Pages/BrowserPage.xaml" Closing="ModernWindow_Closing" Icon="Resources/app.ico">
 
     <!--<mui:ModernWindow.MenuLinkGroups>
         <mui:LinkGroup DisplayName="welcome">
