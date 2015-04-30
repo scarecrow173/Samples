@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using FirstFloor.ModernUI.Presentation;
+
+
 namespace TheShawshankRedemption.Pages
 {
     /// <summary>
@@ -23,6 +26,16 @@ namespace TheShawshankRedemption.Pages
         public HistoryPage()
         {
             InitializeComponent();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (string iHistory in Classes.History.GetInstance.HistoryQueue.ToList())
+            {
+                Link HistoryLink = new Link();
+                HistoryLink.DisplayName = iHistory;
+                HistorySpace.Links.Add(HistoryLink);
+            }
         }
     }
 }

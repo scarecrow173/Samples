@@ -21,19 +21,30 @@ namespace TheShawshankRedemption.Pages
     /// </summary>
     public partial class BrowserPage : UserControl
     {
-
+        public static BrowserPage instance = null;
         public BrowserPage()
         {
             InitializeComponent();
-
+            instance = this;
+        }
+        private void ButtonUpdate()
+        {
+            BackButton.IsEnabled = Browser.CanGoBack;
+            ForwardButton.IsEnabled = Browser.CanGoForward;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
+            if (Browser.CanGoBack)
+                Browser.GoBack();
+            ButtonUpdate();
+
         }
         private void Front_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Browser.CanGoForward)
+                Browser.GoForward();
+            ButtonUpdate();
         }
 
         private void StackPanel_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -41,6 +52,7 @@ namespace TheShawshankRedemption.Pages
             Browser.Height = e.NewSize.Height - MenuPanel.RenderSize.Height;
         }
 
+        // URL入力用TextBox上でEnterKeyの押下を判定
         private void URL_KeyDown(object sender, KeyEventArgs e)
         {
             // Focusされていなければ無視
@@ -54,11 +66,23 @@ namespace TheShawshankRedemption.Pages
                 return;
 
             Browser.Source = new Uri(URLBox.Text);
-            UpdateHistory(URLBox.Text);
         }
-        private void UpdateHistory(string URL)
-        {
 
+        private void Browser_Initialized(object sender, EventArgs e)
+        {
+            ButtonUpdate();
+        }
+
+        private void Browser_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            BackButton.IsEnabled = Browser.CanGoBack;
+            ForwardButton.IsEnabled = Browser.CanGoForward;
+        }
+
+        private void Browser_LoadCompleted(object sender, NavigationEventArgs e)
+        {
+            ButtonUpdate();
+            Classes.History.GetInstance.AddHistory(e.Uri.ToString());
         }
 
     }

@@ -7,15 +7,16 @@
     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SizeChanged="StackPanel_SizeChanged">
         <DockPanel Name="MenuPanel" HorizontalAlignment="Stretch" >
             <Border BorderThickness="2" >
-                <Button Content="◀" Click="Back_Click" />
+                <Button Name="BackButton" Content="◀" Click="Back_Click" />
             </Border>
             <Border BorderThickness="2">
-                <Button Content="▶" Click="Front_Click"/>
+                <Button Name="ForwardButton" Content="▶" Click="Front_Click"/>
             </Border>
             <Border BorderThickness="2">
                 <TextBox Name="URLBox" Text="" HorizontalContentAlignment="Stretch" KeyDown="URL_KeyDown"/>
             </Border>
         </DockPanel>
-        <WebBrowser Name="Browser" Source="https://www.google.co.jp/" VerticalAlignment="Stretch" />
+        <WebBrowser Name="Browser" Source="https://www.google.co.jp/" VerticalAlignment="Stretch" 
+                    Initialized="Browser_Initialized" DataContextChanged="Browser_DataContextChanged" LoadCompleted="Browser_LoadCompleted"/>
     </StackPanel>
 </UserControl>
