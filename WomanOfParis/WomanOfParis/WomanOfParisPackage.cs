@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.InteropServices;
 using System.ComponentModel.Design;
+using System.Timers;
 using Microsoft.Win32;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell.Interop;
@@ -32,6 +33,8 @@ namespace Company.WomanOfParis
     [Guid(GuidList.guidWomanOfParisPkgString)]
     public sealed class WomanOfParisPackage : Package
     {
+
+
         /// <summary>
         /// Default constructor of the package.
         /// Inside this method you can place any initialization code that does not require 
@@ -79,8 +82,18 @@ namespace Company.WomanOfParis
         private void MenuItemCallback(object sender, EventArgs e)
         {
             var dte = GetService(typeof(Microsoft.VisualStudio.Shell.Interop.SDTE)) as EnvDTE80.DTE2;
-            var selection = dte.ActiveDocument.Selection as EnvDTE.TextSelection;
-            selection.Insert("Hello, World.");
+            EnvDTE.TextSelection Selection  = dte.ActiveDocument.Selection as EnvDTE.TextSelection;
+            EnvDTE.VirtualPoint  ActivePoint = Selection.ActivePoint;
+            
+            string Space = "".PadLeft(ActivePoint.VirtualCharOffset);
+            string Author = FormatConfig.Author.Replace("[AUTHOR_NAME]", Environment.UserName);
+            string Date = FormatConfig.Date.Replace("[CREATE_DATE]", System.DateTime.Today.ToString("yyyy/MM/dd"));
+
+            string DocTemplate = FormatConfig.TopSeparator + Environment.NewLine +
+                                 Space + (FormatConfig.LinePrefix + Author + Environment.NewLine) +
+                                 Space + (FormatConfig.LinePrefix + Date + Environment.NewLine) +
+                                 Space + (FormatConfig.BotomSeparator );
+            Selection.Insert(DocTemplate);
         }
 
     }

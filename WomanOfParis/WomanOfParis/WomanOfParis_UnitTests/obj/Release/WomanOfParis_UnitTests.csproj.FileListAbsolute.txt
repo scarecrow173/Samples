@@ -1,0 +1,10 @@
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\bin\Release\WomanOfParis_UnitTests.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\bin\Release\WomanOfParis_UnitTests.pdb
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\bin\Release\Microsoft.VSSDK.TestHostFramework.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\bin\Release\Microsoft.VSSDK.UnitTestLibrary.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\bin\Release\WomanOfParis.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\bin\Release\WomanOfParis.pdb
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\bin\Release\Microsoft.VSSDK.TestHostFramework.pdb
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\obj\Release\WomanOfParis_UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\obj\Release\WomanOfParis_UnitTests.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_UnitTests\obj\Release\WomanOfParis_UnitTests.pdb

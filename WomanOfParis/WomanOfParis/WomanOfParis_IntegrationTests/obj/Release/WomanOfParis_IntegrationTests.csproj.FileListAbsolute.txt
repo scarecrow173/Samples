@@ -1,0 +1,9 @@
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\bin\Release\WomanOfParis_IntegrationTests.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\bin\Release\WomanOfParis_IntegrationTests.pdb
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\bin\Release\Microsoft.VSSDK.TestHostFramework.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\bin\Release\WomanOfParis.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\bin\Release\WomanOfParis.pdb
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\bin\Release\Microsoft.VSSDK.TestHostFramework.pdb
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\obj\Release\WomanOfParis_IntegrationTests.csprojResolveAssemblyReference.cache
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\obj\Release\WomanOfParis_IntegrationTests.dll
+C:\Users\koyaakiy\Documents\Samples\WomanOfParis\WomanOfParis\WomanOfParis_IntegrationTests\obj\Release\WomanOfParis_IntegrationTests.pdb
