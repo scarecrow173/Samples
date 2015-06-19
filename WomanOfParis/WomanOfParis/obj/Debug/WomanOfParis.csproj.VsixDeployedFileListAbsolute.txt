@@ -1,0 +1,4 @@
+C:\Users\koyaakiy\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Company\WomanOfParis\1.0\\WomanOfParis.dll
+C:\Users\koyaakiy\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Company\WomanOfParis\1.0\\WomanOfParis.pkgdef
+C:\Users\koyaakiy\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Company\WomanOfParis\1.0\\extension.vsixmanifest
+C:\Users\koyaakiy\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Company\WomanOfParis\1.0\\WomanOfParis.pdb
