@@ -49,20 +49,21 @@
             this.表示,
             this.終了});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(192, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 48);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // 表示
             // 
             this.表示.Name = "表示";
-            this.表示.Size = new System.Drawing.Size(191, 22);
-            this.表示.Text = "toolStripMenuItem1";
+            this.表示.Size = new System.Drawing.Size(100, 22);
+            this.表示.Text = "表示";
             this.表示.ToolTipText = "表示";
             // 
             // 終了
             // 
             this.終了.Name = "終了";
-            this.終了.Size = new System.Drawing.Size(191, 22);
-            this.終了.Text = "toolStripMenuItem2";
+            this.終了.Size = new System.Drawing.Size(100, 22);
+            this.終了.Text = "終了";
             this.終了.ToolTipText = "終了";
             this.contextMenuStrip1.ResumeLayout(false);
 

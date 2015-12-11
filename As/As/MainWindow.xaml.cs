@@ -20,10 +20,23 @@ namespace As
     /// </summary>
     public partial class MainWindow : Window
     {
+        Classes.HotkeyRegister MainHotkeyRegister = null;
+        Classes.AudioDeviceSwitcher DeviceSwitcher = null;
         public MainWindow()
         {
             InitializeComponent();
             this.MouseLeftButtonDown += (sender, e) => this.DragMove();
+
+            MainHotkeyRegister = new Classes.HotkeyRegister(this);
+            MainHotkeyRegister.RegisterControledHotkey(ModifierKeys.Alt, Key.A, new EventHandler(SwitchAudioDevicce));
+
+            DeviceSwitcher = new Classes.AudioDeviceSwitcher();
+        }
+
+        private void SwitchAudioDevicce(object sender, EventArgs e)
+        {
+            var AudioList = DeviceSwitcher.GetAvailableAudioDeviceList();
+
         }
 
         private void Button_Minimize(object sender, RoutedEventArgs e)

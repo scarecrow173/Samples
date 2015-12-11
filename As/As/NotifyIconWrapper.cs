@@ -56,5 +56,10 @@ namespace As
             // 現在のアプリケーションを終了
             Application.Current.Shutdown();
         }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
