@@ -36,6 +36,8 @@ namespace As
         private void SwitchAudioDevicce(object sender, EventArgs e)
         {
             var AudioList = DeviceSwitcher.GetAvailableAudioDeviceList();
+            DeviceSwitcher.SwitchAudioDevice(AudioList[2], this);
+
 
         }
 

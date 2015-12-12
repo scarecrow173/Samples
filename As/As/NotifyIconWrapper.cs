@@ -10,6 +10,7 @@ namespace As
 {
     public partial class NotifyIconWrapper : Component
     {
+        static MainWindow Main = new MainWindow(); 
         /// <summary>
         /// NotifyIconWrapper クラス を生成、初期化します。
         /// </summary>
@@ -42,8 +43,7 @@ namespace As
         private void toolStripMenuItem_Open_Click(object sender, EventArgs e)
         {
             // MainWindow を生成、表示
-            var wnd = new MainWindow();
-            wnd.Show();
+            Main.Show();
         }
 
         /// <summary>
